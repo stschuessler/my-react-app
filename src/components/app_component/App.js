@@ -1,5 +1,6 @@
 import logo from './logo.svg'
 import './App.css'
+import Header from '../header_component/Header'
 
 function App() {
   console.log('test')
@@ -19,7 +20,9 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <Header />
+
+      {/* <header className="App-header">
         {linkHint}
         <img src={logo} className="App-logo" alt="logo" />
         <p className="myParagraph">
@@ -40,7 +43,7 @@ function App() {
         ) : (
           'no link'
         )}
-      </header>
+      </header> */}
     </div>
   )
 
