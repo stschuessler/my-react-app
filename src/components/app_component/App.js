@@ -2,6 +2,7 @@ import logo from './logo.svg'
 import './App.css'
 import Header from '../header_component/Header'
 import Card from '../card_component/Card'
+import Footer from '../footer_component/Footer'
 
 function App() {
   console.log('test')
@@ -23,6 +24,7 @@ function App() {
     <div className="App">
       <Header />
       <Card />
+      <Footer />
 
       {/* <header className="App-header">
         {linkHint}
@@ -48,11 +50,6 @@ function App() {
       </header> */}
     </div>
   )
-
-  // let myNewVariable = (
-  //   console.log
-  //   return myNewVariable
-  // )
 }
 
 export default App
