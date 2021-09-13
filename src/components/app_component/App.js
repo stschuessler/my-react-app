@@ -1,7 +1,8 @@
 import logo from './logo.svg'
 import './App.css'
 import Header from '../header_component/Header'
-import Card from '../card_component/Card'
+import CardHermione from '../card_component/CardHermione'
+import CardHarry from '../card_component/CardHarry'
 import Footer from '../footer_component/Footer'
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Card />
+      <CardHermione />
+      <CardHarry />
       <Footer />
 
       {/* <header className="App-header">
