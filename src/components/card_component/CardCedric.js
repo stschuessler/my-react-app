@@ -1,9 +1,9 @@
-import './CardRon.css'
+import './CardCedric.css'
 
-const characterName = 'Ron Weasley'
-const house = 'Gryffindor'
+const characterName = 'Cedric Diggory'
+const house = 'Hufflepuff'
 
-function CardRon() {
+function CardCedric() {
   return (
     <section className="card">
       <h2 className="card_subtitle">{characterName}</h2>
@@ -14,4 +14,4 @@ function CardRon() {
   )
 }
 
-export default CardRon
+export default CardCedric
