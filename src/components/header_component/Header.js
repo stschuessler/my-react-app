@@ -1,7 +1,7 @@
 import './Header.css'
 
 function Header() {
-  return <header>Header</header>
+  return <header className="titel">Harry Potter Characters</header>
 }
 
 export default Header
