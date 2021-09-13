@@ -3,6 +3,7 @@ import './App.css'
 import Header from '../header_component/Header'
 import CardHermione from '../card_component/CardHermione'
 import CardHarry from '../card_component/CardHarry'
+import CardRon from '../card_component/CardRon'
 import Footer from '../footer_component/Footer'
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <Header />
       <CardHermione />
       <CardHarry />
+      <CardRon />
       <Footer />
 
       {/* <header className="App-header">
