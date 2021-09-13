@@ -1,6 +1,7 @@
 import logo from './logo.svg'
 import './App.css'
 import Header from '../header_component/Header'
+import Card from '../card_component/Card'
 
 function App() {
   console.log('test')
@@ -21,6 +22,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Card />
 
       {/* <header className="App-header">
         {linkHint}
