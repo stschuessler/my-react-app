@@ -1,9 +1,5 @@
 import './CardHarry.css'
 
-const characterName = 'Harry Potter'
-const house = 'Gryffindor'
-const picture = 'http://hp-api.herokuapp.com/images/harry.jpg'
-
 function tellColorName(house) {
   let color
 
@@ -24,6 +20,10 @@ function tellColorName(house) {
 
 function CardHarry() {
   const houseColor = tellColorName()
+
+  const characterName = 'Harry Potter'
+  const house = 'Gryffindor'
+  const picture = 'http://hp-api.herokuapp.com/images/harry.jpg'
 
   return (
     <section className="card">
