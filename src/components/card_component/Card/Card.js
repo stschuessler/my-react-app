@@ -4,15 +4,15 @@ function tellColorName(house) {
   let color
 
   if (house === 'Slytherin') {
-    color = 'paragraph_house--green'
+    color = 'div_background--green'
   } else if (house === 'Gryffindor') {
-    color = 'paragraph_house--red'
+    color = 'div_background--red'
   } else if (house === 'Hufflepuff') {
-    color = 'paragraph_house--yellow'
+    color = 'div_background--yellow'
   } else if (house === 'Ravenclaw') {
-    color = 'paragraph_house--blue'
+    color = 'div_background--blue'
   } else {
-    color = 'paragraph_house--white'
+    color = 'div_background--white'
   }
 
   return color
@@ -27,15 +27,19 @@ function Card({ characterName, house, picture }) {
 
   return (
     <section className="card">
-      <h2 className="card_subtitle">{characterName}</h2>
-      <img
-        className="character_picture"
-        src={picture}
-        alt={`Picture of ${characterName}`}
-        // Eigentlich brauchen wir 'Picture of' nicht, weil der Screenreader automatisch erkennt, dass es sich um ein Picture handelt.
-      />
-      <p className={houseColor}> House {house}</p>
-      <button>more</button>
+      <div className="picture">
+        <img
+          className="character_picture"
+          src={picture}
+          alt={`Picture of ${characterName}`}
+          // Eigentlich brauchen wir 'Picture of' nicht, weil der Screenreader automatisch erkennt, dass es sich um ein Picture handelt.
+        />
+      </div>
+      <div className={`card__content ${houseColor}`}>
+        <h2 className="content__subtitle">{characterName}</h2>
+        <p> House {house}</p>
+        <button>more</button>
+      </div>
     </section>
   )
 }

@@ -7,23 +7,23 @@
   border-radius: 50%;
 }
 
-.paragraph_house--yellow {
+.div_background--yellow {
   background-color: yellow;
 }
 
-.paragraph_house--green {
+.div_background--green {
   background-color: green;
 }
 
-.paragraph_house--blue {
+.div_background--blue {
   background-color: blue;
 }
 
-.paragraph_house--red {
+.div_background--red {
   background-color: red;
 }
 
-.paragraph_house--white {
+.div_background--white {
   background-color: white;
 }
 

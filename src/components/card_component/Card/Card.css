@@ -1,5 +1,16 @@
 .card {
+  display: flex;
   border: solid;
   padding: 2rem;
   margin: 1rem;
+}
+
+.picture {
+  border: solid;
+  padding-right: 20px;
+}
+
+.card__content {
+  border: solid;
+  padding: 30px;
 }
