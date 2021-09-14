@@ -9,6 +9,10 @@ import Header from '../header_component/Header'
 import Card from '../card_component/Card/Card'
 import Footer from '../footer_component/Footer'
 
+import data from '../../data.json'
+
+console.log(data)
+
 function App() {
   console.log('test')
 
@@ -29,9 +33,9 @@ function App() {
     <div className="App">
       <Header />
       <Card
-        characterName="Harry Potter"
-        house="Gryffindor"
-        picture="http://hp-api.herokuapp.com/images/harry.jpg"
+        characterName={data[0].name}
+        house={data[0].house}
+        picture={data[0].image}
       />
       <Card
         characterName="Cedric Diggory"
