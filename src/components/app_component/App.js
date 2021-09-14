@@ -11,17 +11,17 @@ import Footer from '../footer_component/Footer'
 function App() {
   console.log('test')
 
-  let someText = 'Thihihi'
+  //   let someText = 'Thihihi'
 
-  if (someText.length > 42) {
-    someText = 'Oh no'
-  }
-  console.log(someText)
+  //   if (someText.length > 42) {
+  //     someText = 'Oh no'
+  //   }
+  //   console.log(someText)
 
-  const url = 'https://reactjs.org'
-  const showLink = false
+  //   const url = 'https://reactjs.org'
+  //   const showLink = false
 
-  const linkHint = showLink ? 'with link!' : ''
+  //   const linkHint = showLink ? 'with link!' : ''
   // const linkHint = showLink && 'with link!'
 
   return (

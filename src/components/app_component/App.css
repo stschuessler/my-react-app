@@ -2,6 +2,37 @@
   text-align: center;
 }
 
+.character_picture {
+  height: 200px;
+  border-radius: 50%;
+}
+
+.paragraph_house--yellow {
+  background-color: yellow;
+}
+
+.paragraph_house--green {
+  background-color: green;
+}
+
+.paragraph_house--blue {
+  background-color: blue;
+}
+
+.paragraph_house--red {
+  background-color: red;
+}
+
+.paragraph_house--white {
+  background-color: white;
+}
+
+/* //////////////////// */
+
+/* .App {
+  text-align: center;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -40,3 +71,4 @@
 .myParagraph {
   color: pink;
 }
+ */
