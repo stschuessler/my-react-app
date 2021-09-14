@@ -6,6 +6,7 @@ import CardHarry from '../card_component/CardHarry'
 import CardRon from '../card_component/CardRon'
 import CardDraco from '../card_component/CardDraco'
 import CardCedric from '../card_component/CardCedric'
+import Card from '../card_component/Card/Card'
 import Footer from '../footer_component/Footer'
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <CardRon />
       <CardDraco />
       <CardCedric />
+      <Card />
       <Footer />
 
       {/* <header className="App-header">
