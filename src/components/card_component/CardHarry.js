@@ -4,20 +4,26 @@ const characterName = 'Harry Potter'
 const house = 'Gryffindor'
 const picture = 'http://hp-api.herokuapp.com/images/harry.jpg'
 
-function CardHarry() {
-  let houseColor = ''
+function tellColorName(house) {
+  let color
 
   if (house === 'Slytherin') {
-    houseColor = 'paragraph_house--green'
+    color = 'paragraph_house--green'
   } else if (house === 'Gryffindor') {
-    houseColor = 'paragraph_house--red'
+    color = 'paragraph_house--red'
   } else if (house === 'Hufflepuff') {
-    houseColor = 'paragraph_house--yellow'
+    color = 'paragraph_house--yellow'
   } else if (house === 'Ravenclaw') {
-    houseColor = 'paragraph_house--blue'
+    color = 'paragraph_house--blue'
   } else {
-    houseColor = 'paragraph_house--white'
+    color = 'paragraph_house--white'
   }
+
+  return color
+}
+
+function CardHarry() {
+  const houseColor = tellColorName()
 
   return (
     <section className="card">
