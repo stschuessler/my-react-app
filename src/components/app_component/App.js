@@ -29,11 +29,31 @@ function App() {
     <div className="App">
       <Header />
       <CardHermione />
-      <CardHarry />
-      <CardRon />
-      <CardDraco />
-      <CardCedric />
-      <Card />
+      <Card
+        characterName="Harry Potter"
+        house="Gryffindor"
+        picture="http://hp-api.herokuapp.com/images/harry.jpg"
+      />
+      <Card
+        characterName="Cedric Diggory"
+        house="Hufflepuff"
+        picture="http://hp-api.herokuapp.com/images/cedric.png"
+      />
+      <Card
+        characterName="Draco Malfoy"
+        house="Slytherin"
+        picture="http://hp-api.herokuapp.com/images/draco.jpg"
+      />
+      <Card
+        characterName="Ron Weasley"
+        house="Gryffindor"
+        picture="http://hp-api.herokuapp.com/images/ron.jpg"
+      />
+      <Card
+        characterName="Hermione Granger"
+        house="Gryffindor"
+        picture="http://hp-api.herokuapp.com/images/hermione.jpeg"
+      />
       <Footer />
 
       {/* <header className="App-header">

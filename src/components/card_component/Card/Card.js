@@ -18,12 +18,12 @@ function tellColorName(house) {
   return color
 }
 
-function Card() {
+function Card({ characterName, house, picture }) {
   const houseColor = tellColorName()
 
-  const characterName = 'Harry Potter'
-  const house = 'Gryffindor'
-  const picture = 'http://hp-api.herokuapp.com/images/harry.jpg'
+  //   const characterName = 'Harry Potter'
+  //   const house = 'Gryffindor'
+  //   const picture = 'http://hp-api.herokuapp.com/images/harry.jpg'
 
   return (
     <section className="card">
