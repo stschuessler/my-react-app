@@ -19,7 +19,7 @@ function tellColorName(house) {
 }
 
 function Card({ characterName, house, picture }) {
-  const houseColor = tellColorName()
+  const houseColor = tellColorName(house)
 
   //   const characterName = 'Harry Potter'
   //   const house = 'Gryffindor'

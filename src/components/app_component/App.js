@@ -1,11 +1,11 @@
 import logo from './logo.svg'
 import './App.css'
 import Header from '../header_component/Header'
-import CardHermione from '../card_component/CardHermione'
-import CardHarry from '../card_component/CardHarry'
-import CardRon from '../card_component/CardRon'
-import CardDraco from '../card_component/CardDraco'
-import CardCedric from '../card_component/CardCedric'
+// import CardHermione from '../card_component/CardHermione'
+// import CardHarry from '../card_component/CardHarry'
+// import CardRon from '../card_component/CardRon'
+// import CardDraco from '../card_component/CardDraco'
+// import CardCedric from '../card_component/CardCedric'
 import Card from '../card_component/Card/Card'
 import Footer from '../footer_component/Footer'
 
@@ -28,7 +28,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <CardHermione />
       <Card
         characterName="Harry Potter"
         house="Gryffindor"
