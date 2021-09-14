@@ -32,31 +32,16 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Card
-        characterName={data[0].name}
-        house={data[0].house}
-        picture={data[0].image}
-      />
-      <Card
-        characterName="Cedric Diggory"
-        house="Hufflepuff"
-        picture="http://hp-api.herokuapp.com/images/cedric.png"
-      />
-      <Card
-        characterName="Draco Malfoy"
-        house="Slytherin"
-        picture="http://hp-api.herokuapp.com/images/draco.jpg"
-      />
-      <Card
-        characterName="Ron Weasley"
-        house="Gryffindor"
-        picture="http://hp-api.herokuapp.com/images/ron.jpg"
-      />
-      <Card
-        characterName="Hermione Granger"
-        house="Gryffindor"
-        picture="http://hp-api.herokuapp.com/images/hermione.jpeg"
-      />
+
+      {data.map((character) => (
+        <Card
+          characterName={character.name}
+          house={character.house}
+          picture={character.image}
+          key={character.name}
+        />
+      ))}
+
       <Footer />
 
       {/* <header className="App-header">
