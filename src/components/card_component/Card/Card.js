@@ -20,6 +20,9 @@ function tellColorName(house) {
 
 function Card({ characterName, house, picture }) {
   const houseColor = tellColorName(house)
+  const altAttribute = 'Picture of ' + { characterName }
+
+  console.log(altAttribute)
 
   //   const characterName = 'Harry Potter'
   //   const house = 'Gryffindor'
@@ -28,7 +31,7 @@ function Card({ characterName, house, picture }) {
   return (
     <section className="card">
       <h2 className="card_subtitle">{characterName}</h2>
-      <img className="character_picture" src={picture} />
+      <img className="character_picture" src={picture} alt={altAttribute} />
       <p className={houseColor}> House {house}</p>
       <button>more</button>
     </section>
