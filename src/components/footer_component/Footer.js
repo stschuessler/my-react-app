@@ -10,7 +10,9 @@ function Footer() {
         <h2>{activeHouse}</h2>
         <button
           className={
-            activeHouse === 'Gryffindor' ? 'footer__button--active' : ''
+            activeHouse === 'Gryffindor'
+              ? 'footer__button--active navigation__button'
+              : 'navigation__button'
           }
           onClick={() => setActivHouse('Gryffindor')}
         >
@@ -18,14 +20,20 @@ function Footer() {
         </button>
         <button
           className={
-            activeHouse === 'Hufflepuff' ? 'footer__button--active' : ''
+            activeHouse === 'Hufflepuff'
+              ? 'footer__button--active navigation__button'
+              : 'navigation__button'
           }
           onClick={() => setActivHouse('Hufflepuff')}
         >
           Hufflepuff
         </button>
         <button
-          className={activeHouse === 'Ravenclaw' ? 'footer__button-active' : ''}
+          className={
+            activeHouse === 'Ravenclaw'
+              ? 'footer__button--active navigation__button'
+              : 'navigation__button'
+          }
           onClick={() => {
             setActivHouse('Ravenclaw')
           }}
@@ -33,7 +41,11 @@ function Footer() {
           Ravenclaw
         </button>
         <button
-          className={activeHouse === 'Slytherin' ? 'footer__button-active' : ''}
+          className={
+            activeHouse === 'Slytherin'
+              ? 'footer__button--active navigation__button'
+              : 'navigation__button'
+          }
           onClick={() => {
             setActivHouse('Slytherin')
           }}
