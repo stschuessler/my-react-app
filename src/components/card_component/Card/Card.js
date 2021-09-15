@@ -28,7 +28,7 @@ function Card({
   hairColour,
 }) {
   const houseColor = tellColorName(house)
-  // const showDetails = true
+  const showDetails = true
 
   //   const characterName = 'Harry Potter'
   //   const house = 'Gryffindor'
@@ -49,17 +49,20 @@ function Card({
         <p> House {house}</p>
         <button>more</button>
       </div>
-      <div>
-        <h2>More Details</h2>
-        <ul>
-          <li>Gender: {gender}</li>
-          <li>Date of Birth: {dateOfBirth}</li>
-          <li>Eye Colour: {eyeColour}</li>
-          <li>Hair Colour:{hairColour}</li>
-        </ul>
-      </div>
-      {/* if Abfrage (showDetails == true) hier hin packen */}
-      {/*  in die If Abfrage ein <div> mit mehr Infos rein bringen */}
+
+      {showDetails ? (
+        <div>
+          <h2>More Details</h2>
+          <ul>
+            <li>Gender: {gender}</li>
+            <li>Date of Birth: {dateOfBirth}</li>
+            <li>Eye Colour: {eyeColour}</li>
+            <li>Hair Colour:{hairColour}</li>
+          </ul>
+        </div>
+      ) : (
+        <div></div>
+      )}
     </section>
   )
 }
