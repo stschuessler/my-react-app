@@ -51,7 +51,11 @@ function Card({
         <p> House {house}</p>
         <button
           onClick={() => {
-            alert('button was clicked!')
+            if (showDetails) {
+              setShowDetails(false)
+            } else {
+              setShowDetails(true)
+            }
           }}
         >
           more
