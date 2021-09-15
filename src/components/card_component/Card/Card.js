@@ -49,7 +49,13 @@ function Card({
       <div className={`card__content ${houseColor}`}>
         <h2 className="content__subtitle">{characterName}</h2>
         <p> House {house}</p>
-        <button>more</button>
+        <button
+          onClick={() => {
+            alert('button was clicked!')
+          }}
+        >
+          more
+        </button>
       </div>
 
       {showDetails ? (
