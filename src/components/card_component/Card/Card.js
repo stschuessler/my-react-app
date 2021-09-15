@@ -31,6 +31,7 @@ function Card({
   const houseColor = tellColorName(house)
   //const showDetails = true
   const [showDetails, setShowDetails] = useState(false)
+  const [emoji, setShowEmoji] = useState('')
 
   //   const characterName = 'Harry Potter'
   //   const house = 'Gryffindor'
@@ -84,10 +85,41 @@ function Card({
       </div>
 
       <div>
-        <button> 🤓 </button>
-        <button> 🐍 </button>
-        <button> 🍀 </button>
-        <button> ⚡️ </button>
+        <button
+          onClick={() => {
+            setShowEmoji('🤓')
+          }}
+        >
+          🤓
+        </button>
+        <button
+          onClick={() => {
+            setShowEmoji('🐍')
+          }}
+        >
+          🐍
+        </button>
+        <button
+          onClick={() => {
+            setShowEmoji('🍀')
+          }}
+        >
+          🍀
+        </button>
+
+        <button
+          onClick={() => {
+            setShowEmoji('⚡️')
+          }}
+        >
+          ⚡️
+        </button>
+      </div>
+
+      <div>
+        <p>
+          {emoji} {characterName}
+        </p>
       </div>
     </section>
   )
