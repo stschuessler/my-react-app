@@ -31,6 +31,7 @@ function Card({
   const houseColor = tellColorName(house)
   //const showDetails = true
   const [showDetails, setShowDetails] = useState(false)
+  const [emoji, setShowEmoji] = useState('')
 
   //   const characterName = 'Harry Potter'
   //   const house = 'Gryffindor'
@@ -47,7 +48,10 @@ function Card({
         />
       </div>
       <div className={`card__content ${houseColor}`}>
-        <h2 className="content__subtitle">{characterName}</h2>
+        <h2 className="content__subtitle">
+          {emoji}
+          {characterName}
+        </h2>
         <p> House {house}</p>
         <button
           onClick={() => {
@@ -82,6 +86,44 @@ function Card({
         {/* <div>{characterName === 'Hermione Granger' ? '🤫' : ''}</div> */}
         {/* hier soll eigentlich eine if abfrage hin wo beide namen abgefragt werden */}
       </div>
+
+      <div>
+        <button
+          onClick={() => {
+            setShowEmoji('🤓')
+          }}
+        >
+          🤓
+        </button>
+        <button
+          onClick={() => {
+            setShowEmoji('🐍')
+          }}
+        >
+          🐍
+        </button>
+        <button
+          onClick={() => {
+            setShowEmoji('🍀')
+          }}
+        >
+          🍀
+        </button>
+
+        <button
+          onClick={() => {
+            setShowEmoji('⚡️')
+          }}
+        >
+          ⚡️
+        </button>
+      </div>
+
+      {/* <div>
+        <p>
+          {emoji} {characterName}
+        </p>
+      </div> */}
     </section>
   )
 }
