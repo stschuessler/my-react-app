@@ -82,6 +82,13 @@ function Card({
         {/* <div>{characterName === 'Hermione Granger' ? '🤫' : ''}</div> */}
         {/* hier soll eigentlich eine if abfrage hin wo beide namen abgefragt werden */}
       </div>
+
+      <div>
+        <button> 🤓 </button>
+        <button> 🐍 </button>
+        <button> 🍀 </button>
+        <button> ⚡️ </button>
+      </div>
     </section>
   )
 }
