@@ -48,7 +48,10 @@ function Card({
         />
       </div>
       <div className={`card__content ${houseColor}`}>
-        <h2 className="content__subtitle">{characterName}</h2>
+        <h2 className="content__subtitle">
+          {emoji}
+          {characterName}
+        </h2>
         <p> House {house}</p>
         <button
           onClick={() => {
@@ -116,11 +119,11 @@ function Card({
         </button>
       </div>
 
-      <div>
+      {/* <div>
         <p>
           {emoji} {characterName}
         </p>
-      </div>
+      </div> */}
     </section>
   )
 }
