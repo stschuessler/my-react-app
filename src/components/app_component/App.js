@@ -38,6 +38,10 @@ function App() {
           characterName={character.name}
           house={character.house}
           picture={character.image}
+          gender={character.gender}
+          dateOfBirth={character.dateOfBirth}
+          eyeColour={character.eyeColour}
+          hairColour={character.hairColour}
           key={character.name}
         />
       ))}
