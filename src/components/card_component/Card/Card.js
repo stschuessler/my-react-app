@@ -63,6 +63,10 @@ function Card({
       ) : (
         <div></div>
       )}
+
+      <div>
+        {characterName === 'Harry Potter' ? '⚡' : ''} {characterName}
+      </div>
     </section>
   )
 }
