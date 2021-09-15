@@ -2,13 +2,44 @@ import { useState } from 'react'
 import './Footer.css'
 
 function Footer() {
+  const [activeHouse, setActivHouse] = useState('')
+
   return (
     <footer className="footer">
       <nav className="navigation">
-        <button className="navigation__button">Gryffindor</button>
-        <button className="navigation__button">Hufflepuff</button>
-        <button className="navigation__button">Ravenclaw</button>
-        <button className="navigation__button">Slytherin</button>
+        <h2>{activeHouse}</h2>
+        <button
+          className={
+            activeHouse === 'Gryffindor' ? 'footer__button--active' : ''
+          }
+          onClick={() => setActivHouse('Gryffindor')}
+        >
+          Gryffindor
+        </button>
+        <button
+          className={
+            activeHouse === 'Hufflepuff' ? 'footer__button--active' : ''
+          }
+          onClick={() => setActivHouse('Hufflepuff')}
+        >
+          Hufflepuff
+        </button>
+        <button
+          className={activeHouse === 'Ravenclaw' ? 'footer__button-active' : ''}
+          onClick={() => {
+            setActivHouse('Ravenclaw')
+          }}
+        >
+          Ravenclaw
+        </button>
+        <button
+          className={activeHouse === 'Slytherin' ? 'footer__button-active' : ''}
+          onClick={() => {
+            setActivHouse('Slytherin')
+          }}
+        >
+          Slytherin
+        </button>
       </nav>
     </footer>
   )
