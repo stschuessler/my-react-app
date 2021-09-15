@@ -22,7 +22,7 @@ function tellColorName(house) {
 function Card({
   characterName,
   house,
-  picture,
+  imgageUrl,
   gender,
   dateOfBirth,
   eyeColour,
@@ -35,16 +35,16 @@ function Card({
 
   //   const characterName = 'Harry Potter'
   //   const house = 'Gryffindor'
-  //   const picture = 'http://hp-api.herokuapp.com/images/harry.jpg'
+  //   const imgageUrl = 'http://hp-api.herokuapp.com/images/harry.jpg'
 
   return (
     <section className="card">
-      <div className="picture">
+      <div className="image">
         <img
-          className="character_picture"
-          src={picture}
-          alt={`Picture of ${characterName}`}
-          // Eigentlich brauchen wir 'Picture of' nicht, weil der Screenreader automatisch erkennt, dass es sich um ein Picture handelt.
+          className="character_image"
+          src={imgageUrl}
+          alt={`Image of ${characterName}`}
+          // Eigentlich brauchen wir 'Image of' nicht, weil der Screenreader automatisch erkennt, dass es sich um ein Image handelt.
         />
       </div>
       <div className={`card__content ${houseColor}`}>

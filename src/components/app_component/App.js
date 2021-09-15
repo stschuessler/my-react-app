@@ -37,7 +37,7 @@ function App() {
         <Card
           characterName={character.name}
           house={character.house}
-          picture={character.image}
+          imgageUrl={character.image}
           gender={character.gender}
           dateOfBirth={character.dateOfBirth}
           eyeColour={character.eyeColour}
