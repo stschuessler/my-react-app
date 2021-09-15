@@ -16,3 +16,7 @@
   height: 2rem;
   /* padding: 0.5rem; */
 }
+
+.footer__button--active {
+  background-color: gray;
+}
