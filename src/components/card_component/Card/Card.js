@@ -1,4 +1,5 @@
 import './Card.css'
+import { useState } from 'react'
 
 function tellColorName(house) {
   let color
@@ -28,7 +29,8 @@ function Card({
   hairColour,
 }) {
   const houseColor = tellColorName(house)
-  const showDetails = true
+  //const showDetails = true
+  const [showDetails, setShowDetails] = useState(false)
 
   //   const characterName = 'Harry Potter'
   //   const house = 'Gryffindor'
@@ -66,6 +68,9 @@ function Card({
 
       <div>
         {characterName === 'Harry Potter' ? '⚡' : ''} {characterName}
+        {/* command + control + leerzeichen öffnent Emoji Auswahl */}
+        {/* <div>{characterName === 'Hermione Granger' ? '🤫' : ''}</div> */}
+        {/* hier soll eigentlich eine if abfrage hin wo beide namen abgefragt werden */}
       </div>
     </section>
   )
