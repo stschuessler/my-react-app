@@ -2,12 +2,6 @@ import { useState } from 'react'
 import './Footer.css'
 
 function Footer({ activeHouse, onHouseButtonClick }) {
-  // const activateClickEventHandler = (house) => {
-  //   setActivHouse(house)
-  //   setOnotherVariable(house)
-  // }
-  // in Zeile:  onClick={() => activateClickEventHandler('Gryffindor')}
-
   return (
     <footer className="footer">
       <nav className="navigation">
