@@ -29,13 +29,8 @@ function Card({
   hairColour,
 }) {
   const houseColor = tellColorName(house)
-  //const showDetails = true
   const [showDetails, setShowDetails] = useState(false)
   const [emoji, setShowEmoji] = useState('')
-
-  //   const characterName = 'Harry Potter'
-  //   const house = 'Gryffindor'
-  //   const imgageUrl = 'http://hp-api.herokuapp.com/images/harry.jpg'
 
   return (
     <section className="card">
@@ -118,12 +113,6 @@ function Card({
           ⚡️
         </button>
       </div>
-
-      {/* <div>
-        <p>
-          {emoji} {characterName}
-        </p>
-      </div> */}
     </section>
   )
 }
