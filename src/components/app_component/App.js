@@ -16,6 +16,8 @@ console.log(data)
 function App() {
   console.log('test')
 
+  const [activeHouse, setActivHouse] = useState('')
+
   //   let someText = 'Thihihi'
 
   //   if (someText.length > 42) {

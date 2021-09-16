@@ -2,8 +2,6 @@ import { useState } from 'react'
 import './Footer.css'
 
 function Footer() {
-  const [activeHouse, setActivHouse] = useState('')
-
   function handleHouseButtonClicked(house) {
     setActivHouse(house)
   }
