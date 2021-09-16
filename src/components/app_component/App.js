@@ -37,6 +37,10 @@ function App() {
   //   const linkHint = showLink ? 'with link!' : ''
   // const linkHint = showLink && 'with link!'
 
+  const filteredData = data.filter(
+    (character) => character.house === activeHouse,
+  )
+
   return (
     <div className="App">
       <Header />
