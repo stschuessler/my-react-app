@@ -11,6 +11,8 @@ import Footer from '../footer_component/Footer'
 
 import data from '../../data.json'
 
+import { useState } from 'react'
+
 console.log(data)
 
 function App() {
