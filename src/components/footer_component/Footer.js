@@ -18,7 +18,7 @@ function Footer() {
               ? 'footer__button--active navigation__button'
               : 'navigation__button'
           }
-          onClick={() => handleHouseButtonClicked('Gryffindor')}
+          onClick={() => onHouseButtonClicked('Gryffindor')}
         >
           Gryffindor
         </button>
@@ -28,7 +28,7 @@ function Footer() {
               ? 'footer__button--active navigation__button'
               : 'navigation__button'
           }
-          onClick={() => handleHouseButtonClicked('Hufflepuff')}
+          onClick={() => onHouseButtonClick('Hufflepuff')}
         >
           Hufflepuff
         </button>
@@ -39,7 +39,7 @@ function Footer() {
               : 'navigation__button'
           }
           onClick={() => {
-            handleHouseButtonClicked('Ravenclaw')
+            onHouseButtonClick('Ravenclaw')
           }}
         >
           Ravenclaw
@@ -51,7 +51,7 @@ function Footer() {
               : 'navigation__button'
           }
           onClick={() => {
-            handleHouseButtonClicked('Slytherin')
+            onHouseButtonClick('Slytherin')
           }}
         >
           Slytherin
