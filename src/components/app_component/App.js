@@ -11,10 +11,18 @@ import Footer from '../footer_component/Footer'
 
 import data from '../../data.json'
 
+import { useState } from 'react'
+
 console.log(data)
 
 function App() {
   console.log('test')
+
+  const [activeHouse, setActivHouse] = useState('')
+
+  function handleHouseButtonClicked(house) {
+    setActivHouse(house)
+  }
 
   //   let someText = 'Thihihi'
 
@@ -46,7 +54,10 @@ function App() {
         />
       ))}
 
-      <Footer />
+      <Footer
+        activeHouse={activeHouse}
+        onHouseButtonClick={handleHouseButtonClicked}
+      />
 
       {/* <header className="App-header">
         {linkHint}
