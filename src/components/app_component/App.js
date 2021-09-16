@@ -18,6 +18,10 @@ function App() {
 
   const [activeHouse, setActivHouse] = useState('')
 
+  function handleHouseButtonClicked(house) {
+    setActivHouse(house)
+  }
+
   //   let someText = 'Thihihi'
 
   //   if (someText.length > 42) {

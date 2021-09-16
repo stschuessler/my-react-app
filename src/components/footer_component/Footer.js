@@ -2,10 +2,6 @@ import { useState } from 'react'
 import './Footer.css'
 
 function Footer() {
-  function handleHouseButtonClicked(house) {
-    setActivHouse(house)
-  }
-
   // const activateClickEventHandler = (house) => {
   //   setActivHouse(house)
   //   setOnotherVariable(house)
