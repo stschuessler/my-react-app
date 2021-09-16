@@ -54,7 +54,10 @@ function App() {
         />
       ))}
 
-      <Footer onHouseButtonClick={handleHouseButtonClicked} />
+      <Footer
+        activeHouse={activeHouse}
+        onHouseButtonClick={handleHouseButtonClicked}
+      />
 
       {/* <header className="App-header">
         {linkHint}
