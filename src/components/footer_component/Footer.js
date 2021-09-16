@@ -4,6 +4,16 @@ import './Footer.css'
 function Footer() {
   const [activeHouse, setActivHouse] = useState('')
 
+  function handleHouseButtonClicked(house) {
+    setActivHouse(house)
+  }
+
+  // const activateClickEventHandler = (house) => {
+  //   setActivHouse(house)
+  //   setOnotherVariable(house)
+  // }
+  // in Zeile:  onClick={() => activateClickEventHandler('Gryffindor')}
+
   return (
     <footer className="footer">
       <nav className="navigation">
@@ -14,7 +24,7 @@ function Footer() {
               ? 'footer__button--active navigation__button'
               : 'navigation__button'
           }
-          onClick={() => setActivHouse('Gryffindor')}
+          onClick={() => handleHouseButtonClicked('Gryffindor')}
         >
           Gryffindor
         </button>
@@ -24,7 +34,7 @@ function Footer() {
               ? 'footer__button--active navigation__button'
               : 'navigation__button'
           }
-          onClick={() => setActivHouse('Hufflepuff')}
+          onClick={() => handleHouseButtonClicked('Hufflepuff')}
         >
           Hufflepuff
         </button>
@@ -35,7 +45,7 @@ function Footer() {
               : 'navigation__button'
           }
           onClick={() => {
-            setActivHouse('Ravenclaw')
+            handleHouseButtonClicked('Ravenclaw')
           }}
         >
           Ravenclaw
@@ -47,7 +57,7 @@ function Footer() {
               : 'navigation__button'
           }
           onClick={() => {
-            setActivHouse('Slytherin')
+            handleHouseButtonClicked('Slytherin')
           }}
         >
           Slytherin
