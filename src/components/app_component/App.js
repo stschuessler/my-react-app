@@ -37,6 +37,7 @@ function App() {
   //   const linkHint = showLink ? 'with link!' : ''
   // const linkHint = showLink && 'with link!'
 
+  // filteredData Alternative, bei der nicht auf die Charaktere eingegangen wird, die kein Hous zugewiesen haben
   const filteredData = data.filter(
     (character) => character.house === activeHouse,
   )
@@ -45,7 +46,7 @@ function App() {
     <div className="App">
       <Header />
 
-      {data.map((character) => (
+      {filteredData.map((character) => (
         <Card
           characterName={character.name}
           house={character.house}
