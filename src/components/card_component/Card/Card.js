@@ -62,13 +62,13 @@ function Card({
             }
           }}
         >
-          more
+          {showDetails ? 'Less information' : 'More information'}
         </button>
       </div>
 
       {showDetails ? (
         <div>
-          <h2>More Details</h2>
+          {<h2>More Details</h2>}
           <ul>
             <li>Gender: {gender}</li>
             <li>Date of Birth: {dateOfBirth}</li>
