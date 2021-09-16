@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Footer.css'
 
-function Footer() {
+function Footer({ activeHouse, onHouseButtonClick }) {
   // const activateClickEventHandler = (house) => {
   //   setActivHouse(house)
   //   setOnotherVariable(house)
@@ -18,7 +18,7 @@ function Footer() {
               ? 'footer__button--active navigation__button'
               : 'navigation__button'
           }
-          onClick={() => onHouseButtonClicked('Gryffindor')}
+          onClick={() => onHouseButtonClick('Gryffindor')}
         >
           Gryffindor
         </button>
