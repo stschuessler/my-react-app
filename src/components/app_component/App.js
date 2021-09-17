@@ -15,6 +15,11 @@ function App() {
 
   const [favorites, setFavorites] = useState([])
 
+  function handleFavoriteButtonClicked(favorites) {
+    setFavorites(favorites)
+  }
+  console.log(favorites)
+
   const [activeHouse, setActivHouse] = useState('')
 
   function handleHouseButtonClicked(house) {
@@ -47,6 +52,8 @@ function App() {
           eyeColour={character.eyeColour}
           hairColour={character.hairColour}
           key={character.name}
+          favorites={favorites}
+          onFavoriteButtonClick={handleFavoriteButtonClicked}
         />
       ))}
 
