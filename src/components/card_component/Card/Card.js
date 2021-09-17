@@ -43,6 +43,7 @@ function Card({
         />
       </div>
       <div className={`card__content ${houseColor}`}>
+        <button>My Favorites</button>
         <h2 className="content__subtitle">
           {emoji}
           {characterName}
