@@ -27,6 +27,8 @@ function Card({
   dateOfBirth,
   eyeColour,
   hairColour,
+  favorites,
+  onFavoriteButtonClick,
 }) {
   const houseColor = tellColorName(house)
   const [showDetails, setShowDetails] = useState(false)
@@ -43,6 +45,14 @@ function Card({
         />
       </div>
       <div className={`card__content ${houseColor}`}>
+        <button
+          onClick={() => {
+            onFavoriteButtonClick(favorites.push({ characterName }))
+            // ich muss noch JSON.stringify verwenden
+          }}
+        >
+          My Favorites
+        </button>
         <h2 className="content__subtitle">
           {emoji}
           {characterName}
