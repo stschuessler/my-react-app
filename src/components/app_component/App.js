@@ -4,9 +4,9 @@ import Header from '../header_component/Header'
 import Card from '../card_component/Card/Card'
 import Footer from '../footer_component/Footer'
 
-import data from '../../data.json'
+//import data from '../../data.json'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 //console.log(data)
 
