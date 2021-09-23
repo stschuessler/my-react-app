@@ -1,4 +1,3 @@
-//import logo from './logo.svg'
 import './App.css'
 import Header from '../header_component/Header'
 import Card from '../card_component/Card/Card'
@@ -7,8 +6,6 @@ import Footer from '../footer_component/Footer'
 //import data from '../../data.json'
 
 import { useState, useEffect } from 'react'
-
-//console.log(data)
 
 function App() {
   const [data, setData] = useState([])
@@ -21,8 +18,6 @@ function App() {
         setData(dataFromServer)
       })
   }, [])
-
-  //console.log('test')
 
   const [favorites, setFavorites] = useState([])
 
