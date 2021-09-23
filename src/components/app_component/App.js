@@ -11,6 +11,17 @@ import { useState, useEffect } from 'react'
 //console.log(data)
 
 function App() {
+  const [data, setData] = useState([])
+
+  useEffect(() => {
+    fetch('http://hp-api.herokuapp.com/api/characters')
+      .then((response) => response.json())
+      .then((dataFromServer) => {
+        console.log(dataFromServer)
+        setData(dataFromServer)
+      })
+  }, [])
+
   //console.log('test')
 
   const [favorites, setFavorites] = useState([])
