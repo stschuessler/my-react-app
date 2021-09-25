@@ -26,10 +26,19 @@ function App() {
   }
   console.log(favorites)
 
-  const [activeHouse, setActivHouse] = useState('')
+  const [activeHouse, setActivHouse] = useState(
+    JSON.parse(localStorage.getItem(`activeHouseLocalStorage`)),
+  )
 
-  function handleHouseButtonClicked(house) {
-    setActivHouse(house)
+  // später return ('All') verwenden, sobald der 5. Button 'All' in
+  // der NavBar implementiert ist (TODO)
+
+  // In Local-Storage speichern
+  function handleHouseButtonClicked(newActiveHouse) {
+    setActivHouse(newActiveHouse)
+
+    const stringifiedValue = JSON.stringify(newActiveHouse)
+    localStorage.setItem('activeHouseLocalStorage', stringifiedValue)
   }
 
   let filteredData
