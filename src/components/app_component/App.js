@@ -28,8 +28,12 @@ function App() {
 
   const [activeHouse, setActivHouse] = useState('')
 
+  // In Local-Storage speichern
   function handleHouseButtonClicked(newActiveHouse) {
     setActivHouse(newActiveHouse)
+
+    const stringifiedValue = JSON.stringify(newActiveHouse)
+    localStorage.setItem('activeHousLocalStorage', stringifiedValue)
   }
 
   let filteredData
