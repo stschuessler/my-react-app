@@ -35,7 +35,7 @@ function App() {
     setActivHouse(newActiveHouse)
 
     const stringifiedValue = JSON.stringify(newActiveHouse)
-    localStorage.setItem('activeHousLocalStorage', stringifiedValue)
+    localStorage.setItem('activeHouseLocalStorage', stringifiedValue)
   }
 
   let filteredData
