@@ -28,8 +28,8 @@ function App() {
 
   const [activeHouse, setActivHouse] = useState('')
 
-  function handleHouseButtonClicked(house) {
-    setActivHouse(house)
+  function handleHouseButtonClicked(newActiveHouse) {
+    setActivHouse(newActiveHouse)
   }
 
   let filteredData
