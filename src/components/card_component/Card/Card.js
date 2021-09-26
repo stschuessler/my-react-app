@@ -44,15 +44,20 @@ function Card({
           // Eigentlich brauchen wir 'Image of' nicht, weil der Screenreader automatisch erkennt, dass es sich um ein Image handelt.
         />
       </div>
+
       <div className={`card__content ${houseColor}`}>
         <button
           onClick={() => {
-            onFavoriteButtonClick(favorites.push({ characterName }))
-            // ich muss noch JSON.stringify verwenden
+            onFavoriteButtonClick(favorites.concat({ characterName }))
+            // ich muss hier favorites.concat statt favorites.push verwenden
+            // beim zweiten click eines Favoritenbuttons crasht das ganze sonst
+            //.push gibt als return die .length des neuen Arrays wieder
+            // das sieht man auch im console.log(test: favorite) was ich in App.js eingebaut hab => test: 1
           }}
         >
           My Favorites
         </button>
+
         <h2 className="content__subtitle">
           {emoji}
           {characterName}
