@@ -26,9 +26,13 @@ function App() {
   }
   console.log(favorites)
 
-  const [activeHouse, setActivHouse] = useState(
-    JSON.parse(localStorage.getItem(`activeHouseLocalStorage`)),
-  )
+  const [activeHouse, setActivHouse] = useState(() => {
+    if (localStorage.getItem(`activeHouseLocalStorage`)) {
+      return JSON.parse(localStorage.getItem(`activeHouseLocalStorage`))
+    } else {
+      return 'All houses and non-house characters'
+    }
+  })
 
   // später return ('All') verwenden, sobald der 5. Button 'All' in
   // der NavBar implementiert ist (TODO)
