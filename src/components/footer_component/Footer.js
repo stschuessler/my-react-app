@@ -50,6 +50,18 @@ function Footer({ activeHouse, onHouseButtonClick }) {
         >
           Slytherin
         </button>
+        <button
+          className={
+            activeHouse === 'All houses and non-house characters'
+              ? 'footer__button--active navigation__button'
+              : 'navigation__button'
+          }
+          onClick={() => {
+            onHouseButtonClick('')
+          }}
+        >
+          All Characteres
+        </button>
       </nav>
     </footer>
   )
