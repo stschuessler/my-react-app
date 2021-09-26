@@ -34,9 +34,6 @@ function App() {
     }
   })
 
-  // später return ('All') verwenden, sobald der 5. Button 'All' in
-  // der NavBar implementiert ist (TODO)
-
   // In Local-Storage speichern
   function handleHouseButtonClicked(newActiveHouse) {
     setActivHouse(newActiveHouse)
